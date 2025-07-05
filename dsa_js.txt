@@ -1,0 +1,101 @@
+📍 Step-by-Step Plan
+🚀 Phase 1: Build the Basics of JavaScript
+Before diving into DSA, ensure your JavaScript fundamentals are strong, because you’ll use those to implement algorithms.
+
+🔷 Key topics to revise/learn:
+
+Variables: let, const, scopes.
+
+Data types: string, number, boolean, null, undefined, object, array.
+
+Functions: declaration, arrow functions, parameters & return.
+
+Loops: for, while, for..of, for..in.
+
+Arrays & Objects: creation, manipulation, iteration.
+
+ES6+ features: map, filter, reduce, Set, Map.
+
+Recursion basics.
+
+👉 Resources:
+
+MDN JavaScript Guide
+
+FreeCodeCamp JS Course (YouTube)
+
+Time: 📅 1–2 weeks
+
+🚀 Phase 2: Learn Big-O and DSA Basics
+You need to understand how to analyze the performance of your code and why one solution is better than another.
+
+🔷 Topics:
+
+Big-O Notation: O(1), O(n), O(log n), O(n²), etc.
+
+Space vs. Time complexity.
+
+How to analyze loops & nested loops.
+
+🚀 Phase 3: Master Core Data Structures
+Here you’ll learn how to create and use common data structures.
+
+Data Structure	What to Learn
+Array	Basics, operations (insert, delete, search), built-in JS methods
+String	Immutability, manipulation, common patterns
+Stack	LIFO, implementation (array/object)
+Queue	FIFO, types (circular, deque, priority queue)
+Linked List	Singly, doubly, operations
+Hash Table/Map	Collisions, implementation, use-cases
+Set	Uniqueness, operations
+Tree	Binary Tree, BST, traversals (DFS, BFS)
+Graph	Representation (adjacency list/matrix), traversal (DFS, BFS)
+Heap/Priority Queue	Basics, min-heap & max-heap
+
+🚀 Phase 4: Learn Key Algorithms
+You’ll now implement and practice classic algorithms.
+
+Algorithm Type	Examples
+Sorting	Bubble, Selection, Insertion, Merge, Quick
+Searching	Linear Search, Binary Search
+Recursion	Factorial, Fibonacci, Backtracking
+Dynamic Programming	Knapsack, Longest Common Subsequence
+Graph Algorithms	Dijkstra’s, Prim’s, Kruskal’s
+Greedy Algorithms	Activity selection, Huffman coding
+
+🚀 Phase 5: Practice Patterns
+Once you know the basics, learn problem-solving patterns to crack harder problems:
+✅ Sliding Window
+✅ Two Pointers
+✅ Fast & Slow Pointers
+✅ Backtracking
+✅ Divide & Conquer
+✅ Dynamic Programming
+
+🚀 Phase 6: Practice, Practice, Practice
+🧑‍💻 Solve at least 200–300 problems over time on platforms like:
+
+LeetCode
+
+HackerRank
+
+CodeSignal
+
+Codewars
+
+🎯 Suggested Timeline:
+Phase	Duration
+Basics of JS	1–2 weeks
+Big-O & DSA Basics	2–3 days
+Data Structures	3–4 weeks
+Algorithms	3–4 weeks
+Patterns & Practice	Ongoing
+
+📚 Books & Resources:
+Eloquent JavaScript (for JS basics & recursion)
+
+Grokking Algorithms by Aditya Bhargava (DSA with visuals)
+
+Neetcode’s YouTube playlist
+
+FreeCodeCamp’s DSA 
