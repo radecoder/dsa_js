@@ -119,7 +119,7 @@
 // **
 // ***
 // ****
-// *****    
+// *****
 
 /*
 Row 1 → 1 star
@@ -131,13 +131,11 @@ So on row i, you print exactly i stars.
 
 // for (let i = 1; i <= 5; i++) {          // outer loop (rows) (how many rows to print).
 //     let str = "";                       // empty string for current row
-//     for (let j = 1; j <= i; j++) {      // inner loop (columns) 
+//     for (let j = 1; j <= i; j++) {      // inner loop (columns)
 //         str += "*";                     // add one * to the string
 //     }
 //     console.log(str);                   // print the string after inner loop
 // }
-
-
 
 // 🔟 Print a pattern like this:
 
@@ -147,7 +145,16 @@ So on row i, you print exactly i stars.
 // 1234
 // 12345
 
-// for (let i = 1; i <= 5; i++) {      // outer loop → rows 
+// let n=5;
+// for(let i=1; i<=n; i++){
+//     let str="";
+//     for(let j=1; j<=i; j++){
+//         str+=j;
+//     }
+//     console.log(str);
+// }
+
+// for (let i = 1; i <= 5; i++) {      // outer loop → rows
 //     let str = "";                   // string to build each row
 //     for (let j = 1; j <= i; j++) {  // inner loop → columns
 //         str += j;                   // append current j
@@ -161,7 +168,6 @@ When i = 1:
 j runs from 1 → 1
 
 str = "1"
-
 prints → 1
 
 When i = 2:
@@ -189,6 +195,23 @@ prints → 123
 // 54
 // 5
 
+// n = 5
+//       i         j coulmn
+// row - 1 , str - 5
+// row - 2 , str - 4
+// row - 3 , str - 3
+// row - 4 , str - 2
+// row - 5 , str - 1
+
+// let n=5;
+// for(let i=1; i<=n; i++){
+//     let str= "";
+//     for(let j=n; j>=i; j--){
+//         str+=j;
+//     }
+//     console.log(str);
+// }
+
 // for(i = 1; i<=5; i++){
 //     let str = "";
 //     for(j= 5; j>= i; j--){   // 5 5
@@ -205,17 +228,38 @@ prints → 123
 //  ****
 // *****
 
+// n = 5
+//       i           j          k
+// row - 1 , space - 4 , star - 1
+// row - 2 , space - 3 , star - 2
+// row - 3 , space - 2 , star - 3
+// row - 4 , space - 1 , star - 4
+// row - 5 , space - 0 , star - 5
+
+// let n = 5;
+// for(let i=1; i<=n; i++){
+//     let str = "";
+//     for(let j=1; j<=(n-i); j++){
+//         str+=" ";
+//     }
+//     for(let k=1; k<=i; k++){
+//         str+= "*";
+//     }
+//     console.log(str)
+// }
+
+//or
+
 // for(i=1; i<=5; i ++){
 //     let str = "";
 //     for(j=4; j>=i; j--){
 //         str += " ";
 //     }
-    
+
 //     for(k = 1; k<=i; k++){
 //         str+="*";
 //     }
 //     console.log(str);
-
 
 // }
 
@@ -227,15 +271,183 @@ prints → 123
 //  *******
 // *********
 
-// for (i=1; i<=5; i++){
-//     let str = "";
-//     for(j=4; j>=i; j--){
-//         str+= "8";
+// n = 5
+//       i           j          k
+// row - 1 , space - 4 , star - 1
+// row - 2 , space - 3 , star - 3
+// row - 3 , space - 2 , star - 5
+// row - 4 , space - 1 , star - 7
+// row - 5 , space - 0 , star - 9
+
+// let n=5;
+// for(let i=1; i<=n; i++){
+//     str="";
+//     for(let j=1; j<=n-i; j++){
+//         str+=" ";
+//     }
+//     for(let k=1; k<=(2*i)-1; k++){
+//         str+="*"
 //     }
 //     console.log(str);
-//     for(k=1; k<=9; k++){
-//         str+="*"
-//         console.log(str)
-//     }
-    
 // }
+
+// let n = 5;
+// for (i = 1; i <= n; i++) {
+//   //row
+//   let str = "";
+//   for (j = 1; j <= n - i; j++) {
+//     //space
+//     str += " ";
+//   }
+//   for (k = 1; k <= 2 * i - 1; k++) {
+//     // star
+//     str += "*";
+//   }
+//   console.log(str);
+// }
+
+/*
+🚀 1️⃣ Most Important Questions for for Loop (including patterns)
+📋 Numbers & Logic:
+✅ Print numbers from 1 → N
+✅ Print even & odd numbers between 1 → N
+✅ Sum of first N natural numbers
+✅ Factorial of N (N!)
+✅ Reverse a number (e.g., 123 → 321)
+✅ Check if a number is Palindrome
+✅ Check if a number is Prime
+✅ Print Fibonacci series up to N terms
+
+📋 Patterns:
+✅ Right-angled triangle:
+
+markdown
+Copy
+Edit
+*
+**
+***
+****
+*****
+✅ Right-aligned triangle:
+
+markdown
+Copy
+Edit
+    *
+   **
+  ***
+ ****
+*****
+✅ Pyramid:
+
+markdown
+Copy
+Edit
+    *
+   ***
+  *****
+ *******
+*********
+✅ Inverted pyramid:
+
+markdown
+Copy
+Edit
+*********
+ *******
+  *****
+   ***
+    *
+✅ Diamond:
+
+markdown
+Copy
+Edit
+    *
+   ***
+  *****
+   ***
+    *
+✅ Number patterns:
+
+yaml
+Copy
+Edit
+1
+12
+123
+1234
+12345
+✅ Reverse number triangle:
+
+yaml
+Copy
+Edit
+54321
+5432
+543
+54
+5
+✅ Floyd’s triangle:
+
+Copy
+Edit
+1
+2 3
+4 5 6
+7 8 9 10
+🚀 2️⃣ Most Important Questions for Arrays
+✅ Print all elements of an array
+✅ Find the maximum & minimum element
+✅ Find the second largest element
+✅ Reverse an array
+✅ Count frequency of each element
+✅ Print all pairs of elements
+✅ Print all unique pairs (i < j)
+✅ Find all triplets in an array that sum to a given number
+✅ Find all unique triplets that sum to 0 (3-sum)
+✅ Find the missing number in an array of 1 → N
+✅ Find duplicate elements in an array
+✅ Find intersection (common elements) of two arrays
+
+🚀 3️⃣ Most Important Questions for Strings
+✅ Reverse a string (e.g., hello → olleh)
+✅ Check if a string is a Palindrome (madam)
+✅ Count vowels & consonants
+✅ Remove duplicate characters
+✅ Find the most frequent character
+✅ Count occurrences of each character
+✅ Check if two strings are anagrams (listen ↔ silent)
+✅ Capitalize the first letter of each word
+✅ Check if string contains only letters / only digits
+✅ Count words in a string
+
+📝 Suggested Strategy:
+✨ Start with For Loops + Patterns → get strong in basic loops & nested loops.
+✨ Then Arrays → because they add indexing, conditions, and nested logic.
+✨ Then Strings → because they test manipulation, conditions, and attention to detail.
+
+If you want:
+🔷 I can give you one-by-one questions with hints
+🔷 Or I can give you code templates
+🔷 Or I can create a practice sheet/PDF for you
+
+💬 Just tell me:
+✅ Start from For Loop #1
+✅ Give me arrays now
+✅ Give me all one by one with hints
+
+How do you want to proceed? 🚀
+
+
+
+
+
+
+
+
+
+Ask ChatGPT
+
+*/
