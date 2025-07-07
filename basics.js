@@ -446,8 +446,185 @@ How do you want to proceed? 🚀
 
 
 
-
+*/ /*
 
 Ask ChatGPT
+
+📋 Array Interview Questions
+
+🔷 Easy
+Find the largest and smallest element in an array.
+
+*/
+// let arr =[1,3,2,5,-2,7,4]
+//     let min = arr[0];
+//     let max = arr[0];
+//     for(let i=0; i<arr.length; i++){
+//         if(arr[i]<min){
+//             min = arr[i];
+//         }
+//         if(arr[i]>max){
+//             max=arr[i]
+//         }
+
+//     }
+//     console.log("Largest element is", max);
+//     console.log("smallest element is", min);
+/*
+Reverse an array in-place.
+
+
+function reverseArray(arr){
+    let start = 0;
+    let end = arr.length-1
+    while (start<end){
+        let temp = arr[start]
+        arr[start]= arr[end]
+        arr[end] = temp;
+        start ++;
+        end --;
+    }
+    return arr;
+}
+const arr = [1, 2, 4, 6, 5];
+console.log("Reverse array is ", reverseArray(arr)) */
+
+/*
+Find the second largest element.
+
+*/
+// function secondLargest(arr){
+//     if(arr.length)
+// }
+function findSecondLargestSmallest(arr) {
+  if (arr.length < 2) {
+    return null; // not enough elements
+  }
+
+  // Remove duplicates & sort
+  const uniqueArr = [...new Set(arr)];
+  if (uniqueArr.length < 2) {
+    return null; // all elements are equal
+  }
+
+  // Sort ascending
+  uniqueArr.sort((a, b) => a - b);
+
+  const secondSmallest = uniqueArr[1];
+  const secondLargest = uniqueArr[uniqueArr.length - 2];
+
+  return { secondLargest, secondSmallest };
+}
+
+// Example usage:
+const arr = [5, 2, 9, 1, 6];
+const result = findSecondLargestSmallest(arr);
+
+if (result) {
+  console.log(`Second Largest: ${result.secondLargest}`);
+  console.log(`Second Smallest: ${result.secondSmallest}`);
+} else {
+  console.log("Array does not have enough unique elements.");
+}
+
+/*
+Check if an array is sorted (ascending/descending).
+
+*/ 
+
+/*
+Remove duplicates from a sorted array.
+
+*/ 
+
+/*
+Count the number of even and odd elements.
+
+*/ 
+
+/*
+Find the sum of all elements.
+
+*/ 
+
+/*
+Rotate an array by k positions.
+
+*/
+
+/*
+Find the missing number in an array of size n where numbers are 1 to n+1.
+*/
+
+/*
+Merge two sorted arrays.
+*/ 
+
+/*
+🔷 Medium
+Find the subarray with maximum sum (Kadane’s Algorithm).
+
+Find all pairs of elements in an array whose sum is equal to a given number.
+
+Move all zeros to the end without changing the order of non-zero elements.
+
+Find the majority element in an array.
+
+Find the length of the longest consecutive sequence.
+
+Sort an array of 0s, 1s, and 2s (Dutch National Flag problem).
+
+Find the first repeating and first non-repeating element.
+
+Find if a subarray with sum 0 exists.
+
+🔷 Tricky
+Trapping Rain Water problem.
+
+Maximum product subarray.
+
+Count inversions in an array.
+
+📋 String Interview Questions
+
+🔷 Easy
+Reverse a string.
+
+Check if a string is a palindrome.
+
+Count vowels and consonants.
+
+Remove all spaces from a string.
+
+Find the length of the longest word in a string.
+
+🔷 Medium
+Find the first non-repeating character.
+
+Check if two strings are anagrams.
+
+Check if a string contains all unique characters.
+
+Implement strstr (find a substring in a string).
+
+Find the longest common prefix in an array of strings.
+
+🔷 Tricky
+Longest palindromic substring.
+
+Longest substring without repeating characters.
+
+Minimum window substring (containing all characters of another string).
+
+Print all permutations of a string.
+
+Compress a string (like: aabcccccaaa → a2b1c5a3).
+
+🚀 Preparation Tips
+🎯 Practice writing code on paper or whiteboard.
+🎯 Explain your approach before coding.
+🎯 Optimize if they ask for better time/space complexity.
+🎯 Know the Big O complexities of your solution.
+
 
 */
